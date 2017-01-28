@@ -1,1 +1,6 @@
+Website Links:
+GitHub Hosting:
 https://apyan.github.io/cse134b-hw2/
+
+Firebase Hosting:
+https://amiibodex.firebaseapp.com/

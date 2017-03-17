@@ -1,0 +1,19 @@
+{
+  "short_name": "AmiiboDex",
+  "name": "AmiiboDex",
+  "description": "Keep track of your amiibos using this app!",
+  "version": "1.0.0.0",
+  "manifest_version": 2,
+  "icons": [
+    {
+      "src":"amiibodex-icon192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "https://amiibodex2.firebaseapp.com",
+  "background_color": "#ffffff",
+  "theme_color": "#000080",
+  "display": "standalone",
+  "orientation": "portrait"
+}

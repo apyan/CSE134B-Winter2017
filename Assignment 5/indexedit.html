@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>AmiiboDex Home - Edit</title>
+
+    <link rel="stylesheet" type="text/css" href="css/amiiboTable.css">
+    <link rel="stylesheet" type="text/css" href="css/buttonDesign.css">
+    <link rel="stylesheet" type="text/css" href="css/divDesign.css">
+    <link rel="stylesheet" type="text/css" href="css/textDesign.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <meta name="theme-color" content="#000080" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" type="text/css" href="css/jquery.dataTables.min.css">
+	<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+
+  </head>
+  <body>
+  	<!-- <button class="backButton_1" type="button" onclick="backPressed()">Back</button> -->
+	<div class="headerDiv">
+		<!-- <h1 class="titleHeader">AmiiboDex</h1>-->
+		<img id="AmiiboDex-Logo" class="amiiboDexLogo" alt="ADLogo-Image" src="images/amiibodex_logo_000.png" onclick="backPressed()"><br><br>
+		<!-- <a href="test.html">Test Checklist</a> -->
+	</div>
+
+	<div>
+		<br><br><h1 class="textLine_2" id="greeting-line">Welcome, [username]!</h1>	
+	</div>
+	<button class="modButton" type="button" onclick="editAmiiboClick()">Confirm Edit</button><br><br>
+
+	<table id="customAmiiboTableEdit" class="mainTable">
+		<caption class="textLine">Your Amiibos</caption>
+		<thead class="directionBar">
+			<tr class="tableHeader">
+				<th>Number</th>
+				<th>Name</th>
+				<th>Image</th>
+				<th>Game Origin</th>
+				<th>Date Release</th>
+				<th>Wave</th>
+				<th>Exclusive</th>
+				<th>Description</th>
+				<th>Rarity</th>
+				<th>Have</th>
+			</tr>
+		</thead>
+	</table>
+
+	<script type="text/javascript" src="js/firebase.js"></script>
+	<script type="text/javascript" src="js/test.min.js"></script>
+	<script>
+    if ('serviceWorker' in navigator) {
+      console.log("Will service worker register?");
+      navigator.serviceWorker.register('service-worker.js').then(function(reg){
+        console.log("Yes it did.");
+      }).catch(function(err) {
+        console.log("No it didn't. This happened: ", err)
+      });
+    }
+  </script> 
+  </body>
+</html>
